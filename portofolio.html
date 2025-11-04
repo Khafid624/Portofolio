@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Mohammad Al Khafid Ilhami</title>
+  <link rel="stylesheet" href="portofolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+
+    <!-- Tombol Hamburger -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portofolio.html" class="active">Portofolio</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="https://wa.me/6285748482634" target="_blank" rel="noopener noreferrer">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="portfolio-hero">
+    <h1>Proyek Saya</h1>
+    <p>Berikut beberapa proyek yang pernah saya buat dalam bidang desain dan pengembangan web.</p>
+  </section>
+
+  <!-- Project Cards -->
+  <section class="projects">
+    <div class="project-card">
+        <img src="assets/logo1.png" alt="Project GinoFest 2025" />
+        <h3>GinoFest 2025</h3>
+        <p>Web pendaftaran stand pameran di Icon Mall Gresik sebagai bagian dari acara Gresik Inovasi Festival (Ginofest) yang memfasilitasi kreator, komunitas dan pelaku usaha untuk menampilkan ide inovatif masyarakat gresik.</p>
+        <a href="detail-ginofest.html" class="btn">Lihat Detail</a>
+    </div>  
+
+    <div class="project-card">
+      <img src="assets/logo2.png" alt="Sistem Bioskop Online" />
+      <h3>Sistem Bioskop Online</h3>
+      <p>Platform booking tiket bioskop mirip TIX ID dengan fitur CRUD film, jadwal tayang, dan pembayaran.</p>
+      <a href="#" class="btn">Lihat Detail</a>
+    </div>
+
+    <div class="project-card">
+        <img src="assets/logo3.png" alt="Assessment Kenaikan Kepala Sekolah" />
+        <h3>Assessment Kenaikan Kepala Sekolah SD/MI/SMP</h3>
+        <p>
+          Sistem berbasis web untuk proses penilaian kenaikan jabatan kepala sekolah. 
+          Dilengkapi fitur penilaian dokumen, penilaian CAT, serta tampilan hasil seleksi secara real-time.
+        </p>
+        <a href="assesment.html" class="btn">Lihat Detail</a>
+    </div>
+      
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mohammad Al Khafid Ilhami | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Script Hamburger Menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

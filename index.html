@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio | Mohammad Al Khafid Ilhami</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+
+    <!-- Tombol Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="portofolio.html">Portofolio</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="https://wa.me/6285748482634" target="_blank" rel="noopener noreferrer">Contact</a></li>
+    </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hello, <br>Saya <span>Mohammad Al Khafid Ilhami</span></h1>
+      <p>Mahasiswa S1 Teknik Informatika | Universitas Negeri Surabaya</p>
+      <p>Asal Lamongan | Lahir: 31-03-2005</p>
+      <a href="portofolio.html" class="btn">Let's Talk →</a>
+      <div class="social-links">
+        <a href="https://wa.me/6285748482634" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>        
+        <a href="https://www.linkedin.com/in/mohammad-al-khafid-ilhami-093b90372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384062.png" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/mohammad_al_khafid"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"></a>
+        <a href="https://github.com/Khafid624"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub"></a>
+      </div>
+      <a href="#" class="cv">Download Curriculum Vitae</a>
+    </div>
+    <div class="hero-img">
+      <img src="assets/profil.png" alt="Profile">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>“Teknologi hanyalah alat, positif dan negatif tergantung siapa yang menggunakannya.”</p>
+    <p>
+      Saya adalah mahasiswa S1 Teknik Informatika UNESA, berasal dari Lamongan, lahir pada 31 Maret 2005. 
+      Saya memiliki ketertarikan dalam bidang <b>Pemrograman</b>, <b>UI/UX Design</b>, dan 
+      <b>Frontend Web Development</b>.  
+      Saya juga terbiasa menggunakan <b>Microsoft Office</b> 
+      , <b>Microsoft Excel</b> dan <b>After Effect</b>.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2>Skill</h2>
+    <div class="skills-icons">
+      <img src="assets/word.png" alt="Microsoft Word">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Microsoft Excel">
+      <img src="https://cdn-icons-png.flaticon.com/512/888/888874.png" alt="Adobe XD">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="HTML">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="CSS">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+      <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React">
+      <img src="assets/laravel.png" alt="Laravel">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma">
+      <img src="assets/canva.png" alt="Canva">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mohammad Al Khafid Ilhami | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Script Hamburger Menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

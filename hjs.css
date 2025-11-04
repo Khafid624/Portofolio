@@ -1,0 +1,233 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #1e1e2f;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f9a825;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #f9a825;
+  }
+  
+  /* Hamburger Button */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 100px;
+    background: #2c2c3d;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .hero-img {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+  }
+  
+  .hero-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 260px;
+    height: 260px;
+    background: #f90000;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: 0 0 35px rgba(249, 168, 37, 0.5);
+  }
+  
+  .hero-img img {
+    position: relative;
+    width: 250px;
+    height: 290px;
+    border-radius: 50%;
+    z-index: 2;
+    object-fit: cover;
+    transform: translateY(-25px);
+    clip-path: ellipse(100% 85% at 50% 85%);
+  }
+  
+  .hero-text {
+    max-width: 50%;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-text span {
+    color: #f9a825;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background: #f9a825;
+    color: #1e1e2f;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .btn:hover {
+    background: #fff;
+    color: #1e1e2f;
+  }
+  
+  /* About Section */
+  .about {
+    background: #1e1e2f;
+    color: #fff;
+    padding: 50px 100px;
+    text-align: center;
+  }
+  .about h2 {
+    margin-bottom: 20px;
+    color: #f9a825;
+  }
+  .about p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+  }
+  
+  /* Skills */
+  .skills {
+    padding: 50px 100px;
+    text-align: center;
+    background: #2c2c3d;
+    color: #fff;
+  }
+  .skills h2 {
+    margin-bottom: 30px;
+    color: #f9a825;
+  }
+  .skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  .skills-icons img {
+    width: 55px;
+    transition: transform 0.3s;
+  }
+  .skills-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Footer */
+  footer {
+    background: #1e1e2f;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+    }
+  
+    .hero-img {
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #1e1e2f;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      padding: 15px 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }

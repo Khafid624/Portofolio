@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Proyek | Assessment Kenaikan Kepala Sekolah</title>
+  <link rel="stylesheet" href="assesment.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portofolio.html" class="active">Portofolio</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="https://wa.me/628563217051" target="_blank" rel="noopener">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <section class="project-detail-hero">
+    <h1>Assessment Kenaikan Kepala Sekolah SD/MI/SMP</h1>
+    <p class="subtitle">Sistem Penilaian Terpadu | Dinas Pendidikan Kabupaten Gresik</p>
+  </section>
+
+  <!-- Konten -->
+  <section class="project-content">
+    <div class="content-box">
+      <h2>Tentang Proyek</h2>
+      <p>
+        Proyek <b>Assessment Kenaikan Kepala Sekolah SD/MI/SMP</b> dikembangkan untuk mendukung proses seleksi dan promosi jabatan kepala sekolah secara digital dan transparan. 
+        Sistem ini mempermudah tim penilai dan peserta dalam proses administrasi, penilaian, serta publikasi hasil seleksi secara daring.
+      </p>
+      <p>
+        Dengan antarmuka yang modern dan responsif, aplikasi ini menjadi solusi efektif bagi Dinas Pendidikan Kabupaten Gresik dalam mempercepat proses seleksi tanpa mengorbankan akurasi penilaian.
+      </p>
+    </div>
+
+    <div class="content-box">
+      <h2>Fitur Utama</h2>
+      <ul>
+        <li><b>Penilaian Dokumen:</b> Verifikasi dan penilaian berkas administrasi peserta secara digital.</li>
+        <li><b>Penilaian CAT:</b> Sistem ujian berbasis komputer untuk menilai kompetensi akademik dan manajerial.</li>
+        <li><b>Hasil Seleksi:</b> Menampilkan skor akhir, peringkat, dan status kelulusan peserta secara otomatis.</li>
+        <li><b>Daftar Peserta:</b> Monitoring peserta yang mengajukan dengan filter berdasarkan jenjang dan status seleksi.</li>
+        <li><b>Dashboard Admin:</b> Visualisasi data seleksi, jumlah peserta, dan progres penilaian dalam satu tampilan.</li>
+      </ul>
+    </div>
+
+    <div class="content-box">
+      <h2>Teknologi yang Digunakan</h2>
+      <h3>Framework Laravel</h3>
+      <div class="tech-list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>PHP</span>
+        <span>MySQL</span>
+      </div>
+    </div>
+
+    <div class="content-box">
+      <h2>Preview</h2>
+      <img src="assets/assesment1.png" alt="Preview Assessment Kepala Sekolah" class="preview-img" />
+      <img src="assets/assesment2.png" alt="Preview Assessment Kepala Sekolah" class="preview-img" />
+      <img src="assets/assesment3.png" alt="Preview Assessment Kepala Sekolah" class="preview-img" />
+      <img src="assets/assesment4.png" alt="Preview Assessment Kepala Sekolah" class="preview-img" />
+      <img src="assets/assesment5.png" alt="Preview Assessment Kepala Sekolah" class="preview-img" />
+      <img src="assets/assesment6.png" alt="Preview Assessment Kepala Sekolah" class="preview-img" />
+      <img src="assets/assesment7.png" alt="Preview Assessment Kepala Sekolah" class="preview-img" />
+    </div>
+
+    <a href="portofolio.html" class="btn back-btn">← Kembali</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mohammad Al Khafid Ilhami | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Hamburger Script
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
